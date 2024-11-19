@@ -13,16 +13,18 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Quicksand:wght@400;700&display=swap"
         rel="stylesheet">
+        <link rel="icon" href="https://i.postimg.cc/bvQ8Bth7/ktktkt.png" >
 
 </head>
 
 <body>
     <div class="navbar">
-        <div class="logo"><a href="#"><img src="https://i.postimg.cc/Ss6VNfC0/pixelcut-kt.png"
-                    style="max-width: 100px; margin: 0;"></a></div>
+        <div class="logo"><a href="#"><img src="https://i.postimg.cc/bvQ8Bth7/ktktkt.png"
+                    style="max-width: 50px; margin-left: 50px;"></a></div>
         <div class="toggle" onclick="toggleMenu()" aria-expanded="false" aria-controls="menu">☰</div>
-        <div class="menu" id="menu">
+        <div class="menu" id="menu" style="margin-right: 50px;">
             <a href="#home">Home</a>
+            <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </div>
@@ -31,18 +33,41 @@
     <section id="home" style="background-color: #F5FFFA;">
         <div class="container-fluid">
             <div class="row pt-5">
-                <div class="row mb-5">
-                    <h1 class="display-3 px-5" style="color: #2F4F4F; font-size: 45px; text-align: left;">My Portfolio
-                    </h1>
-                </div>
+                
                 <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
-                    <div class="picContainer shadow-lg mx-2 mb-5 rounded-5">
-                        <img src="https://i.postimg.cc/qRS8Hm1X/2-1-Tangpus-Kim-Pic.jpg" class="rounded-5 img-fluid">
+                    <div class="textContainer mx-5" style="color: #696969; font-size: 50px;">
+                        <strong><span style="color: pink">Hello! I'm Kim</span><br> Student of Bachelor of Science in Information Technology  </strong>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
-                    <div class="textContainer mx-2" style="color: #696969;">
-                        Hello! I'm Kim, a Bachelor of Science in Information Technology student at
+                    <div class="picContainer shadow p-3 mb-5 bg-body-tertiary rounded-circle">
+                        <img src="https://i.postimg.cc/qRS8Hm1X/2-1-Tangpus-Kim-Pic.jpg"
+                            class="rounded-circle img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" style="background-color: #F5FFFA;">
+        <div class="container-fluid">
+            <div class="row pt-5">
+                <div class="row mb-5">
+                    <h1 class="display-3 px-5" style="color: #2F4F4F; font-size: 45px; text-align: center;">About Me
+                    </h1>
+                </div>
+                <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                    <div class="picContainer ">
+                        <img src="https://i.postimg.cc/qRS8Hm1X/2-1-Tangpus-Kim-Pic.jpg"
+                            class="rounded-5 shadow-lg img-fluid">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mt-5 pt-3 justify-content-center align-items-center ">
+                    <div class="textContainer m-5" style="color: #696969; font-size: 30px;">
+                       <strong>I am Kim Tangpus </strong>
+                     </div>
+                    <div class="textContainer mx-5" style="color: #696969;">
+                       I am a student at
                         Polytechnic University of the Philippines with a passion for Information Technology.
                         My academic journey and hands-on projects have equipped me with strong skills in
                         HTML, CSS, and various JavaScript frameworks.<br><br>
@@ -67,38 +92,40 @@
                 <h1 class="display-3 pt-5" style="color: #2F4F4F; font-size: 50px; text-align: center;">Projects</h1>
             </div>
             <div class="row my-5 pb-5 justify-content-center">
-            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center mb-4">
-                <div class="card" style="background-color: #FFFFFF; width: 100%; height: auto;">
-                    <img src="https://i.postimg.cc/8ct8K6pv/Screenshot-2024-10-29-181805.png" class="card-img-top"
-                        style="width: 100%; height: auto; object-fit: cover;">
-                    <div class="card-body">
-                        <h5 class="card-title" style="color: #2F4F4F;">Discover Japan</h5>
-                        <p class="card-text" style="color: #696969;">A website where you can see the most famous
-                            landmarks in Japan.</p>
-                        <a href="act2/index.html">
-                            <button class="btn" style="background-color: #2F4F4F; color: #FFFFFF;">View More</button>
-                        </a>
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center mb-4">
+                    <div class="card" style="background-color: #FFFFFF; width: 100%; height: auto;">
+                        <img src="https://i.postimg.cc/8ct8K6pv/Screenshot-2024-10-29-181805.png" class="card-img-top"
+                            style="width: 100%; height: auto; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #2F4F4F;">Discover Japan</h5>
+                            <p class="card-text" style="color: #696969;">A website where you can see the most famous
+                                landmarks in Japan.</p>
+                            <a href="act2/index.html">
+                                <button class="btn" style="background-color: #2F4F4F; color: #FFFFFF;">View
+                                    More</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center mb-4">
+                    <div class="card" style="background-color: #FFFFFF; width: 100%; height: auto;">
+                        <img src="https://i.postimg.cc/qgVrddYY/Screenshot-2024-11-16-102720.png" class="card-img-top"
+                            style="width: 100%; height: auto; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #2F4F4F;">Rick and Morty</h5>
+                            <p class="card-text" style="color: #696969;">A website where you can see the character
+                                informations in Rick and Morty</p>
+                            <a href="act4/index.html">
+                                <button class="btn" style="background-color: #2F4F4F; color: #FFFFFF;">View
+                                    More</button>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            
-            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center mb-4">
-                <div class="card" style="background-color: #FFFFFF; width: 100%; height: auto;">
-                    <img src="https://i.postimg.cc/qgVrddYY/Screenshot-2024-11-16-102720.png" class="card-img-top"
-                        style="width: 100%; height: auto; object-fit: cover;">
-                    <div class="card-body">
-                        <h5 class="card-title" style="color: #2F4F4F;">Rick and Morty</h5>
-                        <p class="card-text" style="color: #696969;">A website where you can see the character
-                            informations in Rick and Morty</p>
-                        <a href="act4/index.html">
-                            <button class="btn" style="background-color: #2F4F4F; color: #FFFFFF;">View More</button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-       
         </div>
     </section>
 
@@ -117,21 +144,23 @@
                 </div>
                 <div class="col-md-6">
                     <form>
-                        <div class="mb-3">
+                        <div class="mx-3">
                             <label for="name" class="form-label" style="color: #2F4F4F;">Name</label>
                             <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
                         </div>
-                        <div class="mb-3">
+                        <div class="mx-3">
                             <label for="email" class="form-label" style="color: #2F4F4F;">Email</label>
                             <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
                         </div>
-                        <div class="mb-3">
+                        <div class="mx-3">
                             <label for="message" class="form-label" style="color: #2F4F4F;">Message</label>
                             <textarea class="form-control" id="message" rows="5" placeholder="Your message"
                                 required></textarea>
                         </div>
+                        <div class="m-3">
                         <button type="submit" class="btn" style="background-color: #2F4F4F; color: #FFFFFF;">Send
                             Message</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -151,10 +180,10 @@
     body {
         margin: 0;
         background-color: #F5FFFA;
-        
+        text-align: justify;
         font-family: 'Noto Sans JP', sans-serif;
         color: #696969;
-       
+
     }
 
     .navbar {
@@ -162,7 +191,7 @@
         justify-content: space-between;
         align-items: center;
         background-color: #2F4F4F;
-        /* Dark Slate Gray */
+
         padding: 5px;
     }
 
@@ -173,7 +202,7 @@
 
     .navbar .logo a {
         color: #F5FFFA;
-        /* Mint Cream */
+
         text-decoration: none;
         font-size: 1.5em;
     }
@@ -186,7 +215,7 @@
 
     .navbar .menu a {
         color: #F5FFFA;
-        /* Mint Cream */
+
         text-decoration: none;
         padding: 14px 20px;
         font-size: larger;
@@ -194,7 +223,6 @@
 
     .navbar .menu a:hover {
         background-color: #B0C4DE;
-        /* Light Steel Blue */
         border-radius: 5px;
     }
 
@@ -203,7 +231,7 @@
         font-size: 1.5em;
         cursor: pointer;
         color: #F5FFFA;
-        /* Mint Cream */
+
     }
 
     h1,
@@ -214,11 +242,11 @@
     footer {
         text-align: center;
         background-color: #2F4F4F;
-        /* Dark Slate Gray */
+
         margin: auto;
         padding: 20px;
         color: #F5FFFA;
-        /* Mint Cream */
+
     }
 
     @media (max-width: 768px) {
@@ -227,7 +255,7 @@
             flex-direction: column;
             width: 25%;
             background-color: #2F4F4F;
-            /* Dark Slate Gray */
+
             position: absolute;
             top: 60px;
             right: 0;
@@ -248,7 +276,6 @@
     .card {
         transition: transform 0.3s, box-shadow 0.3s;
         background-color: #FFFFFF;
-        /* White */
     }
 
     .card-body {
@@ -268,9 +295,9 @@
 
     button {
         background-color: #FF7F50;
-        /* Coral */
+
         color: #FFFFFF;
-        /* White */
+
         padding: 10px 20px;
         border: none;
         border-radius: 5px;
@@ -278,9 +305,9 @@
 
     button:hover {
         background-color: #B0C4DE;
-        /* Light Steel Blue */
+
         color: #2F4F4F;
-        /* Dark Slate Gray */
+
     }
 
     .picContainer {
