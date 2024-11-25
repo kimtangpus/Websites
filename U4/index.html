@@ -1,144 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Video Showcase</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      background-color: #f8f9fa;
-    }
-    .navbar-nav .nav-link:hover {
-      color: #00ffb3 !important;
-    }
-    .video-section {
-      padding: 60px 0;
-    }
-    .video-container {
-      position: relative;
-      padding-bottom: 56.25%; /* 16:9 ratio */
-      height: 0;
-      overflow: hidden;
-    }
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-    .section-title {
-      text-align: center;
-      margin-bottom: 40px;
-      color: #333;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Showcase</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #00ffb3 !important;
+        }
+
+        .video-section {
+            padding: 60px 0;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 300px;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #333;
+        }
+        .footer{
+            margin: auto;
+      padding: 20px;
+        }
+    </style>
 </head>
+
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">My Videos</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#videos1">Video Section 1</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#videos2">Video Section 2</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#videos3">Video Section 3</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Videos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+           
+        </div>
+    </nav>
 
-  <!-- Video Section 1 -->
-  <section id="videos1" class="video-section">
-    <div class="container">
-      <h2 class="section-title">Featured Videos</h2>
-      <div class="row">
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/VIDEO_ID1" frameborder="0" allowfullscreen></iframe>
-          </div>
+   
+    <section id="videos1" class="video-section">
+        <div class="container">
+            <h2 class="section-title">Featured Videos</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="video-container">
+                        <iframe width="1440" height="609" src="https://www.youtube.com/embed/RN5maxRpI_s"
+                            title="Nitrous vs Supercharger | HiLow" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID2" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID3" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/VIDEO_ID2" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/VIDEO_ID3" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Video Section 2 -->
-  <section id="videos2" class="video-section bg-light">
-    <div class="container">
-      <h2 class="section-title">Tutorial Videos</h2>
-      <div class="row">
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/VIDEO_ID4" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/VIDEO_ID5" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/VIDEO_ID6" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Video Section 3 -->
-  <section id="videos3" class="video-section">
-    <div class="container">
-      <h2 class="section-title">Documentaries</h2>
-      <div class="row">
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/VIDEO_ID7" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/VIDEO_ID8" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/VIDEO_ID9" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  
+   
+    <footer class="bg-dark text-light text-center py-4">
+        <p>&copy; All Rights Reserved.</p>
+    </footer>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-light text-center py-4">
-    <p>&copy; 2024 My Video Showcase. All Rights Reserved.</p>
-  </footer>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
