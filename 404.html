@@ -1,127 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 - Out of Gas</title>
-   
+    <title>404 Page Not Found</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Anton&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
     <div class="container">
-        <div class="scene">
-            <div class="truck">
-                <img src="pickup-truck.png" alt="Pick-Up Truck" class="truck-img">
-                <div class="smoke"></div>
-            </div>
-            <div class="mechanic">
-                <img src="mechanic.png" alt="Mechanic" class="mechanic-img">
-                <div class="speech-bubble">"Looks like we ran out of gas!"</div>
-            </div>
+        <div class="code">
+            <span class="four">4</span>
+            <span class="zero"></span>
+            <span class="four">4</span>
         </div>
-        <div class="message">
-            <h1>404 - Out of Gas</h1>
-            <p>Oops! This page broke down on the highway. Let's get you back on track.</p>
-            <button id="back-home">Back to Safety</button>
+        <div class="error">Error! Page Not Found</div>
+        <div class="links">
+            <a href="act2/index.html">Japan</a> |
+            <a href="act4/index.html">Rick and Morty</a> |
+            <a href="U4/index.html">For Car Guys</a> |
+            <a href="index.html">Portfolio</a>
         </div>
     </div>
 
-    <style>
-        body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background: #f7d7b7; /* Desert-themed background color */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.container {
-    text-align: center;
-}
-
-.scene {
-    position: relative;
-}
-
-.truck {
-    position: relative;
-}
-
-.truck-img {
-    width: 400px;
-}
-
-.smoke {
-    position: absolute;
-    top: -20px;
-    left: 50px;
-    width: 80px;
-    height: 80px;
-    background: url('smoke.png') no-repeat center/contain;
-    animation: smokeRise 3s infinite;
-}
-
-@keyframes smokeRise {
-    0% { transform: translateY(0); opacity: 1; }
-    100% { transform: translateY(-40px); opacity: 0; }
-}
-
-.mechanic {
-    position: absolute;
-    bottom: 0;
-    left: 20px;
-}
-
-.mechanic-img {
-    width: 100px;
-}
-
-.speech-bubble {
-    background-color: white;
-    padding: 10px;
-    border-radius: 10px;
-    position: absolute;
-    top: -50px;
-    left: 120px;
-    font-size: 14px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.message h1 {
-    font-size: 48px;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.message p {
-    font-size: 20px;
-    color: #555;
-    margin-bottom: 20px;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #ff6600;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #cc5200;
-}
-
-    </style>
-    <script>
-        // Redirect back to homepage on button click
-document.getElementById('back-home').addEventListener('click', function() {
-    window.location.href = '/';
-});
-
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
+<style>
+    body {
+        background-color: #e6e6e6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        font-family: 'Racing Sans One', sans-serif;
+        color: #333333; 
+        position: relative;
+        overflow: hidden;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    .code {
+        font-size: 200px;
+        font-weight: bold;
+        color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .code span {
+        display: inline-block;
+        position: relative;
+    }
+
+    .four {
+        font-size: 200px;
+        font-weight: bold;
+        color: #000;
+        font-family: 'Anton', sans-serif;
+    }
+
+    .zero {
+        width: 200px;
+        height: 200px;
+        background-image: url('https://i.postimg.cc/FRRJjC9D/te.png');
+        background-size: cover;
+        background-position: center;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .zero:hover {
+        transform: rotate(720deg);
+    }
+
+    .error {
+        font-size: 40px;
+        color: #333333;
+        margin-bottom: 30px;
+    }
+
+    .links {
+        text-transform: uppercase;
+        font-size: 25px;
+        color: #333333;
+    }
+
+    .links a {
+        color: #000000; 
+        margin: 0 10px;
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+    }
+
+    .links a:hover {
+        color: #ff6600; 
+        text-decoration: underline;
+    }
+</style>
+
 </html>
