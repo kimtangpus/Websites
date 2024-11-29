@@ -146,7 +146,7 @@
                         <img src="https://i.postimg.cc/3wM24fc0/Screenshot-2024-11-29-at-9-44-06-PM.png"
                             class="card-img-top" style="width: 100%; height: auto; object-fit: cover;">
                         <div class="card-body">
-                            <h5 class="card-title">Turbo Tribe</h5>
+                            <h5 class="card-title">Torque Tribe</h5>
                             <p class="card-text">For Those Who Live Life in the Fast Lane.
 
                             </p>
@@ -352,9 +352,16 @@
 <script>
     const toggleButton = document.querySelector('.navbar .toggle');
     const menu = document.querySelector('.navbar .menu');
+    const menuLinks = document.querySelectorAll('.navbar .menu a');
+
     toggleButton.addEventListener('click', () => {
         menu.classList.toggle('active');
     });
-</script>
 
+    menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            menu.classList.remove('active');
+        });
+    });
+</script>
 </html>

@@ -12,14 +12,14 @@
 
 <body>
 
-    <div class="container">
-        <div class="code">
+    <div class="container d-flex flex-column justify-content-center align-items-center vh-100">
+        <div class="code d-flex align-items-center">
             <span class="four">4</span>
             <span class="zero"></span>
             <span class="four">4</span>
         </div>
-        <div class="error">Error! Page Not Found</div>
-        <div class="links">
+        <div class="error mt-3">Error! Page Not Found</div>
+        <div class="links mt-4">
             <a href="act2/index.html">Japan</a> |
             <a href="act4/index.html">Rick and Morty</a> |
             <a href="U4/index.html">For Car Guys</a> |
@@ -33,19 +33,8 @@
 <style>
     body {
         background-color: #e6e6e6;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        margin: 0;
         font-family: 'Racing Sans One', sans-serif;
-        color: #333333; 
-        position: relative;
-        overflow: hidden;
-    }
-
-    .container {
-        text-align: center;
+        color: #333333;
     }
 
     .code {
@@ -56,25 +45,23 @@
         align-items: center;
     }
 
-    .code span {
-        display: inline-block;
-        position: relative;
-    }
-
     .four {
-        font-size: 300px;
+        font-size: 300px; 
         font-weight: bold;
         color: #000;
         font-family: 'Anton', sans-serif;
     }
 
     .zero {
-        width: 300px;
-        height: 300px;
+        width: 300px; 
+        height: 300px; 
         background-image: url('https://i.postimg.cc/FRRJjC9D/te.png');
         background-size: cover;
         background-position: center;
         transition: transform 0.5s ease-in-out;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .zero:hover {
@@ -82,38 +69,38 @@
     }
 
     .error {
-        font-size: 40px;
+        font-size: 40px; 
         color: #ff6600;
-        margin-bottom: 30px;
+        text-align: center;
     }
 
     .links {
         text-transform: uppercase;
-        font-size: 25px;
-        color: #333333;
+        font-size: 25px; 
+        text-align: center;
     }
 
     .links a {
-        color: #000000; 
+        color: #000000;
         margin: 0 10px;
         text-decoration: none;
         transition: color 0.3s ease-in-out;
     }
 
     .links a:hover {
-        color: #ff6600; 
+        color: #ff6600;
         text-decoration: underline;
     }
 
-    /* Media Queries for Smaller Screens */
+
     @media (max-width: 768px) {
         .four {
-            font-size: 200px;
+            font-size: 200px; 
         }
 
         .zero {
-            width: 250px;
-            height: 250px;
+            width: 200px;
+            height: 200px;
         }
 
         .error {
@@ -129,14 +116,14 @@
         }
     }
 
+
     @media (max-width: 480px) {
         .four {
-            font-size: 150px;
-        }
+            font-size: 150px; }
 
         .zero {
-            width: 200px;
-            height: 200px;
+            width: 150px;
+            height: 150px;
         }
 
         .error {
